@@ -60,7 +60,7 @@ function update_ohmyzsh() {
     fi
 
     # Number of days before trying to update again
-    epoch_target=${UPDATE_ZSH_DAYS:-13}
+    epoch_target=${UPDATE_ZSH_DAYS:-1}
     # Test if enough time has passed until the next update
     if (( ( $(current_epoch) - $LAST_EPOCH ) < $epoch_target )); then
         return
